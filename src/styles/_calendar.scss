@@ -51,12 +51,12 @@
   }
 
   @each $name, $offset in $start-offsets {
-    &--start-#{$name} {
-      .calendar__day:first-child {
-        margin-left: $offset * $col-step;
-      }
+  &--start-day-#{$name} {
+    .calendar__day:first-child {
+      margin-left: $offset * $col-step;
     }
   }
+}
 
   @for $len from 28 through 31 {
     &--month-length-#{$len} {
